@@ -1,0 +1,6 @@
+{
+  "name": "Unblocked Games",
+  "description": "A clean, basic unblocked games website where games are configured in a JSON structure and played via sandbox-friendly embedded iframe elements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

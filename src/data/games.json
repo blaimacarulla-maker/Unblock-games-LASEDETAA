@@ -1,0 +1,90 @@
+[
+  {
+    "id": "2048",
+    "title": "2048",
+    "description": "An addictive slide-and-merge puzzle game. Combine identical numbers to double their value and strive for the elusive 2048 tile.",
+    "category": "Puzzle",
+    "controls": "Arrow keys or WASD to slide tiles in all directions.",
+    "iframe": "<iframe src=\"https://gabrielecirulli.github.io/2048/\" style=\"width:100%; height:100%; border:0;\" allowfullscreen=\"true\" scrolling=\"no\"></iframe>",
+    "icon": "Grid3X3",
+    "color": "from-amber-400 to-amber-600",
+    "rating": 4.8
+  },
+  {
+    "id": "tetris",
+    "title": "Tetris Lite",
+    "description": "The ultimate tile-matching block puzzle. Rotate, move, and drop falling tetrominoes to clear rows and prevent stacks from reaching the top.",
+    "category": "Puzzle",
+    "controls": "Arrow keys: Left/Right to move, Up to rotate, Down for soft drop. Keyboard space: Hard drop.",
+    "iframe": "<iframe src=\"https://chvin.github.io/react-tetris/\" style=\"width:100%; height:100%; border:0; background:#111;\" allowfullscreen=\"true\" scrolling=\"no\"></iframe>",
+    "icon": "Grid",
+    "color": "from-blue-500 to-indigo-600",
+    "rating": 4.9
+  },
+  {
+    "id": "hextris",
+    "title": "Hextris",
+    "description": "A fast-paced hexa-matching arcade game. Spin the central hexagon to catch falling colored bars and prevent them from piling out of bounds.",
+    "category": "Arcade",
+    "controls": "Left and Right arrows to rotate the central hexagonal block.",
+    "iframe": "<iframe src=\"https://hextris.github.io/hextris/\" style=\"width:100%; height:100%; border:0;\" allowfullscreen=\"true\" scrolling=\"no\"></iframe>",
+    "icon": "Hexagon",
+    "color": "from-pink-500 to-indigo-500",
+    "rating": 4.7
+  },
+  {
+    "id": "flappy-bird",
+    "title": "Flappy Bird Cl.",
+    "description": "Steer a small, fragile bird through columns of green pipes. Highly addictive gameplay where a single touch means game over.",
+    "category": "Skill",
+    "controls": "Spacebar, mouse click, or tap on the screen to flap wings and gain height.",
+    "iframe": "<iframe src=\"https://nebez.github.io/floppybird/\" style=\"width:100%; height:100%; border:0;\" allowfullscreen=\"true\" scrolling=\"no\"></iframe>",
+    "icon": "Zap",
+    "color": "from-yellow-400 to-orange-500",
+    "rating": 4.5
+  },
+  {
+    "id": "pacman",
+    "title": "Pac-Man Arcade",
+    "description": "The definitive 8-bit arcade legend. Navigate the grid-like maze, eat Pac-Dots, avoid the colored ghosts, and devour them after eating Power Pellets.",
+    "category": "Arcade",
+    "controls": "Use Arrow keys to control your movement inside the maze.",
+    "iframe": "<iframe src=\"https://macek.github.io/google_pacman/\" style=\"width:100%; height:100%; border:0;\" allowfullscreen=\"true\" scrolling=\"no\"></iframe>",
+    "icon": "Gamepad2",
+    "color": "from-yellow-500 to-yellow-600",
+    "rating": 4.8
+  },
+  {
+    "id": "sinuous",
+    "title": "Sinuous Evade",
+    "description": "A beautiful physics-inspired dodge game. Drag your glowing line through a galaxy of floating red hazards while collecting green shield powerups.",
+    "category": "Skill",
+    "controls": "Move your mouse cursor to guide your particle tail around screen hazards.",
+    "iframe": "<iframe src=\"https://www.sinuousgame.com/\" style=\"width:100%; height:100%; border:0;\" allowfullscreen=\"true\" scrolling=\"no\"></iframe>",
+    "icon": "Sparkles",
+    "color": "from-emerald-400 to-teal-600",
+    "rating": 4.6
+  },
+  {
+    "id": "tower-blocks",
+    "title": "Tower Stack",
+    "description": "Test your reflexes and depth-perception. Drop massive skyscraper levels precisely on top of each other. The taller you build, the shakier it gets.",
+    "category": "Skill",
+    "controls": "Press Spacebar, left mouse click, or screen tap to release the swinging block.",
+    "iframe": "<iframe src=\"https://claytonbaer.github.io/tower-blocks/\" style=\"width:100%; height:100%; border:0;\" allowfullscreen=\"true\" scrolling=\"no\"></iframe>",
+    "icon": "Building",
+    "color": "from-rose-500 to-red-600",
+    "rating": 4.4
+  },
+  {
+    "id": "minesweeper",
+    "title": "Minesweeper",
+    "description": "Exercise strategic thinking. Uncover squares on a board while avoiding hidden mines, using numerical clues in surrounding grid cells.",
+    "category": "Strategy",
+    "controls": "Left Click to clear safety square, Right Click (or long press) to flag a suspected mine.",
+    "iframe": "<iframe src=\"https://beejjorgensen.github.io/minesweeper/\" style=\"width:100%; height:100%; border:0; background:white;\" allowfullscreen=\"true\" scrolling=\"no\"></iframe>",
+    "icon": "ShieldAlert",
+    "color": "from-cyan-500 to-blue-600",
+    "rating": 4.6
+  }
+]
