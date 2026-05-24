@@ -13,12 +13,23 @@
   {
     "id": "monkey-mart",
     "title": "Monkey Mart",
-    "description": "Run your own supermarket with cute monkey workers! Harvest bananas, stock shelves, manage transactions, and grow your retail business in this super addictive idle casual game.",
+    "description": "Run your own supermarket with cute monkey workers! Harvest bananas, stock shelves and grow your business.",
     "category": "Idle",
-    "controls": "Arrow keys / WASD / Drag: Move around to manage the supermarket",
+    "controls": "Arrow keys / WASD: Move",
     "icon": "ShoppingBag",
     "color": "from-green-500 to-emerald-600",
     "rating": 4.8,
-    "iframe": "<iframe style=\"position: absolute; width:100%; height:100%; border:none; top:0; left:0;\" src=\"/Unblock-games-LASEDETAA/monkey-mart/index.html\" scrolling=\"no\" allowfullscreen=\"\" allow=\"autoplay; gamepad; keyboard\"></iframe>"
+    "iframe": "<iframe style=\"position:absolute;width:100%;height:100%;border:none;top:0;left:0;\" src=\"/Unblock-games-LASEDETAA/monkey-mart/index.html\" scrolling=\"no\" allowfullscreen allow=\"autoplay; gamepad; keyboard\"></iframe>"
+  },
+  {
+    "id": "moto-x3m",
+    "title": "Moto X3M",
+    "description": "Race through crazy obstacle courses, perform stunts and reach the finish line fast.",
+    "category": "Racing",
+    "controls": "Arrow keys: Drive and balance",
+    "icon": "Bike",
+    "color": "from-red-500 to-orange-600",
+    "rating": 4.8,
+    "iframe": "<iframe src=\"/Unblock-games-LASEDETAA/moto-x3m/\" title=\"Moto X3M\" allowfullscreen style=\"width:100%;height:100%;border:none;\"></iframe>"
   }
 ]
