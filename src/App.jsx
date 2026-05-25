@@ -222,9 +222,17 @@ export default function App() {
         onCustomizeCloak={() => {}}
       />
 
+          {/* Website Logo */}
+      <div className="w-full flex justify-center pt-6 pb-4">
+        <img
+          src="/Unblock-games-LASEDETAA/myweb.png"
+          alt="Website Logo"
+          className="w-72 md:w-[500px] h-auto drop-shadow-2xl"
+        />
+      </div>
+
       {/* Layout Grid container */}
-      <div className="flex-1 max-w-7xl w-full mx-auto px-4 md:px-6 pt-6 flex flex-col lg:flex-row gap-6">
-        
+      <div className="flex-1 max-w-7xl w-full mx-auto px-4 md:px-6 pt-2 flex flex-col lg:flex-row gap-6">
         {/* Left Sidebar filtering pane - Hide when playing a game in fullscreen theater */}
         {!selectedGame && (
           <Sidebar
