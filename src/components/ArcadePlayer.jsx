@@ -130,11 +130,13 @@ export default function ArcadePlayer({
             {/* Iframe Mount Area */}
             <div className={`flex-1 relative bg-[#0b0214] ${isFullscreen ? "pt-[40px]" : ""}`}>
               {/* Actual Embedded raw HTML iframe with security sandboxing rules */}
-              <div 
-                className="w-full h-full"
-                key={iframeKey}
-                dangerouslySetInnerHTML={{ __html: game.iframe }}
-              />
+             <iframe
+  key={iframeKey}
+  src={getIframeUrl()}
+  className="w-full h-full"
+  frameBorder="0"
+  allowFullScreen
+/>
 
               {/* Security Badge overlay */}
               <div className="absolute bottom-3 left-3 bg-black/65 text-[10px] font-mono text-purple-400 px-2 py-1 rounded backdrop-blur-sm pointer-events-none">
