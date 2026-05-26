@@ -10,6 +10,7 @@
     "rating": 4.9,
     "iframe": "<iframe src=\"https://html5.gamedistribution.com/69d78d071f704fa183d75b4114ae40ec/\" title=\"Basketball Stars\" allowfullscreen=\"\" loading=\"eager\" referrerpolicy=\"no-referrer-when-downgrade\" style=\"width:100%; height:100%; border:none;\"></iframe>"
   },
+
   {
     "id": "monkey-mart",
     "title": "Monkey Mart",
@@ -20,5 +21,29 @@
     "color": "from-green-500 to-emerald-600",
     "rating": 4.8,
     "iframe": "<iframe style=\"position:absolute;width:100%;height:100%;border:none;top:0;left:0;\" src=\"/Unblock-games-LASEDETAA/monkey-mart/index.html\" scrolling=\"no\" allowfullscreen allow=\"autoplay; gamepad; keyboard\"></iframe>"
+  },
+
+  {
+    "id": "moto-x3m-custom",
+    "title": "Moto X3M",
+    "description": "Bike racing stunt game",
+    "category": "Racing",
+    "controls": "Arrow keys",
+    "icon": "Gamepad2",
+    "color": "from-blue-500 to-cyan-600",
+    "rating": 5,
+    "iframe": "<iframe src=\"https://trueedu20.github.io/g5/class-460\" class=\"w-full h-full\" frameborder=\"0\" allowfullscreen></iframe>"
+  },
+
+  {
+    "id": "gold-digger-custom",
+    "title": "Gold Digger",
+    "description": "Dig, collect gold and avoid obstacles",
+    "category": "Arcade",
+    "controls": "Arrow keys / WASD",
+    "icon": "Sparkles",
+    "color": "from-yellow-500 to-orange-600",
+    "rating": 5,
+    "iframe": "<iframe src=\"https://trueedu20.github.io/g9/class-584\" class=\"w-full h-full\" frameborder=\"0\" allowfullscreen></iframe>"
   }
 ]
