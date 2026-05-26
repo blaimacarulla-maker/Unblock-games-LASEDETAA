@@ -92,41 +92,48 @@ useEffect(() => {
     link.href = icon;
   };
 
-  const panic = () => {
-
-    if (document.fullscreenElement) {
-      document.exitFullscreen().catch(()=>{});
-    }
-
-    if (cloakPreset === "docs") {
-
-      document.title = "Google Docs";
-
-      changeFavicon(
-        "https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico"
-      );
-
-      window.location.replace("https://docs.google.com");
-
-    } else {
-
-      document.title = "Wikipedia";
-
-      changeFavicon(
-        "https://en.wikipedia.org/static/favicon/wikipedia.ico"
-      );
-
-      window.location.replace("https://www.wikipedia.org");
-
-    }
-
-  };
-
   const handleKeyDown = (e) => {
+
     if (e.key === "Escape") {
-      e.preventDefault();
-      panic();
+
+      setPanicActive(prev => {
+
+        const next = !prev;
+
+        if (next) {
+
+          if (cloakPreset === "docs") {
+
+            document.title = "Google Docs";
+
+            changeFavicon(
+              "https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico"
+            );
+
+          } else {
+
+            document.title = "Wikipedia";
+
+            changeFavicon(
+              "https://en.wikipedia.org/static/favicon/wikipedia.ico"
+            );
+
+          }
+
+        } else {
+
+          document.title = "Unblocked Games | Clean Arcade";
+
+          changeFavicon("/logo.png");
+
+        }
+
+        return next;
+
+      });
+
     }
+
   };
 
   window.addEventListener("keydown", handleKeyDown, true);
