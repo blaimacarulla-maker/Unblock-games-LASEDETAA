@@ -78,17 +78,66 @@ export default function App() {
     localStorage.setItem("unblocked_total_plays", totalPlays.toString());
   }, [totalPlays]);
 
-  // Master Global keyboard Escape listener for Panic action
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
-        setPanicActive((prev) => !prev);
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+useEffect(() => {
 
+  const changeFavicon = (icon) => {
+    let link = document.querySelector("link[rel='icon']");
+
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "icon";
+      document.head.appendChild(link);
+    }
+
+    link.href = icon;
+  };
+
+  const panic = () => {
+
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(()=>{});
+    }
+
+    if (cloakPreset === "docs") {
+
+      document.title = "Google Docs";
+
+      changeFavicon(
+        "https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico"
+      );
+
+      window.location.replace("https://docs.google.com");
+
+    } else {
+
+      document.title = "Wikipedia";
+
+      changeFavicon(
+        "https://en.wikipedia.org/static/favicon/wikipedia.ico"
+      );
+
+      window.location.replace("https://www.wikipedia.org");
+
+    }
+
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Escape") {
+      e.preventDefault();
+      panic();
+    }
+  };
+
+  window.addEventListener("keydown", handleKeyDown, true);
+  document.addEventListener("keydown", handleKeyDown, true);
+
+  return () => {
+    window.removeEventListener("keydown", handleKeyDown, true);
+    document.removeEventListener("keydown", handleKeyDown, true);
+  };
+
+}, [cloakPreset]);
   // Map custom games nicely into list format
   const mapCustomToGame = (cg) => {
     const userRating = ratings[cg.id] || 5.0;
