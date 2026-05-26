@@ -66,7 +66,46 @@ export default function ArcadePlayer({
     document.addEventListener("fullscreenchange", handleFullscreenChange);
     return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);
   }, []);
+useEffect(() => {
 
+  const recoverFocus = () => {
+
+    setTimeout(() => {
+      window.focus();
+      document.body.focus();
+    }, 100);
+
+  };
+
+  window.addEventListener(
+    "click",
+    recoverFocus,
+    true
+  );
+
+  window.addEventListener(
+    "focus",
+    recoverFocus,
+    true
+  );
+
+  return () => {
+
+    window.removeEventListener(
+      "click",
+      recoverFocus,
+      true
+    );
+
+    window.removeEventListener(
+      "focus",
+      recoverFocus,
+      true
+    );
+
+  };
+
+}, []);
   return (
     <div className="space-y-6 animate-fade-in select-none">
       
