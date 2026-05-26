@@ -96,10 +96,9 @@ useEffect(() => {
 
     if (e.key === "Escape") {
 
-      setPanicActive(prev => {
+     const next = !panicActive;
 
-        const next = !prev;
-
+setPanicActive(next);
         if (next) {
 
           if (cloakPreset === "docs") {
