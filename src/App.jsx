@@ -135,6 +135,30 @@ const handleKeyDown = (e) => {
   });
 
 };
+
+      } else {
+
+        document.title = "Wikipedia";
+
+        changeFavicon(
+          "https://en.wikipedia.org/static/favicon/wikipedia.ico"
+        );
+
+      }
+
+    } else {
+
+      document.title = "Unblocked Games | Clean Arcade";
+
+      changeFavicon("/logo.png");
+
+    }
+
+    return next;
+
+  });
+
+};
     } else {
 
       document.title = "Wikipedia";
