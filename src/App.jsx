@@ -129,7 +129,11 @@ const handleKeyDown = (e) => {
       changeFavicon("/logo.png");
 
     }
+    return next;
 
+  });
+
+};
     return next;
 
   });
