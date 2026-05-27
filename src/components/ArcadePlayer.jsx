@@ -176,7 +176,10 @@ useEffect(() => {
   frameBorder="0"
   allowFullScreen
 />
-
+allow="autoplay; gamepad; fullscreen; clipboard-write"
+referrerPolicy="no-referrer"
+title={game.title}
+/>
               {/* Security Badge overlay */}
               <div className="absolute bottom-3 left-3 bg-black/65 text-[10px] font-mono text-purple-400 px-2 py-1 rounded backdrop-blur-sm pointer-events-none">
                 SANDBOXED SECURE STACK
