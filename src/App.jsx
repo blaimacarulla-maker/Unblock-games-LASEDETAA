@@ -98,20 +98,43 @@ const handleKeyDown = (e) => {
 
   e.preventDefault();
 
-  const next = !panicActive;
+  setPanicActive(prev => {
 
-  setPanicActive(next);
+    const next = !prev;
 
-  if (next) {
+    if (next) {
 
-    if (cloakPreset === "docs") {
+      if (cloakPreset === "docs") {
 
-      document.title = "Google Docs";
+        document.title = "Google Docs";
 
-      changeFavicon(
-        "https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico"
-      );
+        changeFavicon(
+          "https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico"
+        );
 
+      } else {
+
+        document.title = "Wikipedia";
+
+        changeFavicon(
+          "https://en.wikipedia.org/static/favicon/wikipedia.ico"
+        );
+
+      }
+
+    } else {
+
+      document.title = "Unblocked Games | Clean Arcade";
+
+      changeFavicon("/logo.png");
+
+    }
+
+    return next;
+
+  });
+
+};
     } else {
 
       document.title = "Wikipedia";
