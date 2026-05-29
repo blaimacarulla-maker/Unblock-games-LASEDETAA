@@ -91,93 +91,45 @@ useEffect(() => {
 
     link.href = icon;
   };
-
 const handleKeyDown = (e) => {
-
   if (e.key !== "Escape") return;
 
   e.preventDefault();
 
-  setPanicActive(prev => {
-
+  setPanicActive((prev) => {
     const next = !prev;
 
     if (next) {
-
       if (cloakPreset === "docs") {
-
         document.title = "Google Docs";
 
         changeFavicon(
           "https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico"
         );
-
       } else {
-
         document.title = "Wikipedia";
 
         changeFavicon(
           "https://en.wikipedia.org/static/favicon/wikipedia.ico"
         );
-
       }
-
     } else {
-
       document.title = "Unblocked Games | Clean Arcade";
 
       changeFavicon("/logo.png");
-
-    }
-    return next;
-
-  });
-
-};
- 
-
- 
-
-    } else {
-
-      document.title = "Unblocked Games | Clean Arcade";
-
-      changeFavicon("/logo.png");
-
     }
 
     return next;
-
   });
-
-};
-    } else {
-
-      document.title = "Wikipedia";
-
-      changeFavicon(
-        "https://en.wikipedia.org/static/favicon/wikipedia.ico"
-      );
-
-    }
-
-  } else {
-
-    document.title = "Unblocked Games | Clean Arcade";
-
-    changeFavicon("/logo.png");
-
-  }
-
 };
 
-  window.addEventListener("keydown", handleKeyDown, true);
-  document.addEventListener("keydown", handleKeyDown, true);
+window.addEventListener("keydown", handleKeyDown, true);
+document.addEventListener("keydown", handleKeyDown, true);
 
-  return () => {
-    window.removeEventListener("keydown", handleKeyDown, true);
-    document.removeEventListener("keydown", handleKeyDown, true);
-  };
+return () => {
+  window.removeEventListener("keydown", handleKeyDown, true);
+  document.removeEventListener("keydown", handleKeyDown, true);
+};
 
 }, [cloakPreset]);
   // Map custom games nicely into list format
