@@ -125,10 +125,16 @@ useEffect(() => {
 };
 
 window.addEventListener("keydown", handleKeyDown, true);
+
+window.top?.addEventListener("keydown", handleKeyDown, true);
+
 document.addEventListener("keydown", handleKeyDown, true);
 
 return () => {
   window.removeEventListener("keydown", handleKeyDown, true);
+
+  window.top?.removeEventListener("keydown", handleKeyDown, true);
+
   document.removeEventListener("keydown", handleKeyDown, true);
 };
 
