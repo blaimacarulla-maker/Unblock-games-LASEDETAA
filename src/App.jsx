@@ -136,15 +136,7 @@ const handleKeyDown = (e) => {
 };
  
 
-      } else {
-
-        document.title = "Wikipedia";
-
-        changeFavicon(
-          "https://en.wikipedia.org/static/favicon/wikipedia.ico"
-        );
-
-      }
+ 
 
     } else {
 
