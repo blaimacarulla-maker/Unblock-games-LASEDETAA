@@ -96,7 +96,7 @@ useEffect(() => {
   if (e.key !== "Escape") return;
 
   e.preventDefault();
-
+console.log("ESC DETECTADO");
   setPanicActive((prev) => {
     const next = !prev;
 
