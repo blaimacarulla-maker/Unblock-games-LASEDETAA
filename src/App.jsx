@@ -91,7 +91,8 @@ useEffect(() => {
 
     link.href = icon;
   };
-const handleKeyDown = (e) => {
+
+  const handleKeyDown = (e) => {
   if (e.key !== "Escape") return;
 
   e.preventDefault();
